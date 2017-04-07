@@ -1,0 +1,7 @@
+#Mon Apr 03 22:23:48 ART 2017
+base.0=/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_61a1a98b1b82c8c0d95387a448c9c0b88902742f
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c728ec1f09c301dec3ecdda52fb9c4a214b3eaab/classes.dex
+base.1=/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c728ec1f09c301dec3ecdda52fb9c4a214b3eaab
+file.0=/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_61a1a98b1b82c8c0d95387a448c9c0b88902742f/classes.dex

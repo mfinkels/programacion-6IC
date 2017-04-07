@@ -1,0 +1,88 @@
+[
+    {
+        "outputFile": "/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w600dp-v13/values-w600dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "/Users/alanfried/.android/build-cache/2acf313ea3714e7d4052fed9f7c706c0505aac2f/output/res/values-w600dp-v13/values-w600dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 119,
+                    "endColumn": 54,
+                    "endOffset": 169
+                },
+                "from": {
+                    "file": "/Users/alanfried/.android/build-cache/2acf313ea3714e7d4052fed9f7c706c0505aac2f/output/res/values-w600dp-v13/values-w600dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 119,
+                        "endColumn": 54,
+                        "endOffset": 169
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/Users/alanfried/Desktop/TrabajoPractico1 2/Z:\\SEXTOOO\\Programacion con Peti\\TrabajoPractico1\\app\\build\\intermediates\\res\\merged\\debug\\values-w600dp-v13\\values-w600dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 63,
+                    "endOffset": 114
+                },
+                "from": {
+                    "file": "/Users/alanfried/Desktop/TrabajoPractico1 2/Z:\\SEXTOOO\\Programacion con Peti\\TrabajoPractico1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 63,
+                        "endOffset": 114
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 119,
+                    "endColumn": 54,
+                    "endOffset": 169
+                },
+                "from": {
+                    "file": "/Users/alanfried/Desktop/TrabajoPractico1 2/Z:\\SEXTOOO\\Programacion con Peti\\TrabajoPractico1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\values-w600dp-v13\\values-w600dp-v13.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 119,
+                        "endColumn": 54,
+                        "endOffset": 169
+                    }
+                }
+            }
+        ]
+    }
+]

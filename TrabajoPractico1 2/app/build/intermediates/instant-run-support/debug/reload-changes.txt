@@ -1,0 +1,10 @@
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\android\tools\fd\runtime\AppPatchesLoaderImpl.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\a42200717\trabajopractico1\R$mipmap$override.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\a42200717\trabajopractico1\R$styleable$override.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\android\support\v7\appcompat\R$id$override.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\a42200717\trabajopractico1\ActividadPrincipal$override.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\a42200717\trabajopractico1\R$layout$override.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\a42200717\trabajopractico1\R$integer$override.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\a42200717\trabajopractico1\R$style$override.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\a42200717\trabajopractico1\R$id$override.class
+CHANGED,Z:\SEXTOOO\Programacion con Peti\TrabajoPractico1\app\build\intermediates\transforms\instantRun\debug\folders\4000\5\enhanced\com\example\a42200717\trabajopractico1\R$string$override.class

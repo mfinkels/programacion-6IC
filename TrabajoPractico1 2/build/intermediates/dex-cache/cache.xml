@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c791a4d5af0f5434e6157e170910f5e13695023">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_61a1a98b1b82c8c0d95387a448c9c0b88902742f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/b442d5f229cdf393c0c0383111e3479c2e6db10c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="30489a97b06cc3945bdbcc1770089af9e3b3b64d">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c1d6f8eb3f271cebddcbfd7faaf3ccfaff341b27/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/73f8683f2aeef4574cf82e43188a0a66341f528e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b140e74126db05f06b53dd133181ef7de3b03d47/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/1a65b407530d1c209967df5dcd492213ff2922cb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="593fbaec1c3e100480a2bd72457b64b7dde6ac2d">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9ba0a61d09491fc12ebcd2ad18047ca43364a608/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/4685765138607aa1752e789a34cf9dcc31928bd6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_30b5b6bc0457c168359b7bdeb995332bebceb2b3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/a2ebe182ae0513ce83fe5ca205a9e97124dc2805/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_51d0addf6d938cbb354a889cba075b8746e2ff28/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_e8bd8e16eefd7c92910a090156dd9958191339be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/2520f5c3e45d6ea8223facf1ae151b8a9fd383dd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e91e1f335dc418d0138991a1d5155f0490ab6082">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c225f582bd13881e6ba1917abc9367b2c0d35f44/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/2acf313ea3714e7d4052fed9f7c706c0505aac2f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3b82c285d7a69b9447b0faca7f0f819f6b69e323/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/a897d48ba8aa69b7cfeb92b486e842653c63df33/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b53d61bae49278c0fa202d9066d2e72fc151c1e8">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f59df465ab8200ef0900a3b8b25acf49c9a10804/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c728ec1f09c301dec3ecdda52fb9c4a214b3eaab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/45a79092a0181f748d17b7cc84f9a68d5725df6b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="dd7676ac12aa6653718b7ea33d93ce9d6915d526">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_0e699f07268c462e4d73eaaa4fcce360f306262d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/c3ce6196c0922563504c2c623792dce7616e16bf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1dc44c4798cbd79e95e4838a3fdc734c0e3f895f">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f5817bd876f35c23951171ce5f51f37358f88af5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/a2ebe182ae0513ce83fe5ca205a9e97124dc2805/output/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_ab598b08cc75298bd1c846885f0d706c85d55608/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/alanfried/.android/build-cache/14d7263d96c57e0f348271bb9acc1eb3a5645cf4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a06eb7761fca120bbb46b34b930a3a3462ba9d7f">
+        <dex dex="/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ee801347ea2c1d1958d252fa5dc40d2226241be3/classes.dex" />
+    </item>
+
+</items>

@@ -1,0 +1,4 @@
+#Wed Mar 29 18:58:21 ART 2017
+base.0=/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9
+renamed.0=classes.dex
+file.0=/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_9/classes.dex

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/alanfried/Desktop/TrabajoPractico1 2/Z:\\SEXTOOO\\Programacion con Peti\\TrabajoPractico1\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/alanfried/Desktop/TrabajoPractico1 2/Z:\\SEXTOOO\\Programacion con Peti\\TrabajoPractico1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/alanfried/Desktop/TrabajoPractico1 2/Z:\\SEXTOOO\\Programacion con Peti\\TrabajoPractico1\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/alanfried/Desktop/TrabajoPractico1 2/Z:\\SEXTOOO\\Programacion con Peti\\TrabajoPractico1\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/alanfried/.android/build-cache/2acf313ea3714e7d4052fed9f7c706c0505aac2f/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/Users/alanfried/Desktop/TrabajoPractico1 2/app/build/intermediates/res/merged/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/alanfried/.android/build-cache/2acf313ea3714e7d4052fed9f7c706c0505aac2f/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    }
+]
