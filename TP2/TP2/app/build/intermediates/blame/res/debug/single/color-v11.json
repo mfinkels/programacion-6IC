@@ -1,7 +1,15 @@
 [
     {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
     },
     {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",

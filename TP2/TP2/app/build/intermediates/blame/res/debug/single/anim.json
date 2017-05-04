@@ -4,6 +4,10 @@
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_out_top.xml"
     },
     {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_in_top.xml"
     },
@@ -14,6 +18,14 @@
     {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
     },
     {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
@@ -28,8 +40,20 @@
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_popup_exit.xml"
     },
     {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
     },
     {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
@@ -38,5 +62,21 @@
     {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\anim\\abc_popup_enter.xml"
     }
 ]

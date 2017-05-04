@@ -16,16 +16,48 @@
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     },
     {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\color\\abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\abc_search_url_text.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_light.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\abc_primary_text_disable_only_material_light.xml"
     },
     {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_search_url_text.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\color\\abc_search_url_text.xml"
     },
     {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_light.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_light.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\switch_thumb_material_light.xml"
+    },
+    {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_dark.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\color\\abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_material_dark.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\abc_primary_text_material_dark.xml"
     },
     {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_secondary_text_material_light.xml",
@@ -34,5 +66,9 @@
     {
         "merged": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\switch_thumb_material_dark.xml",
         "source": "Z:\\SEXTOOO\\Programacion con Peti\\Trabajo Practico 2\\TP2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\color\\switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Matias\\Documents\\GitHub\\programacion-6IC\\TP2\\TP2\\app\\build\\intermediates\\res\\merged\\debug\\color\\abc_primary_text_disable_only_material_dark.xml",
+        "source": "C:\\Users\\Matias\\.android\\build-cache\\13b19435e575fe3a4d7bd0db5ed09ff8b0188ba2\\output\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
     }
 ]
