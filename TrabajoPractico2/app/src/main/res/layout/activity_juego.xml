@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empiece a jugar!"
+        android:textSize="30dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:"
+        android:id="@+id/nombreJugador"
+        android:textSize="30dp"
+        android:layout_marginBottom="90dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/boton0"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="0" />
+
+            <ImageButton
+                android:id="@+id/boton1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="1" />
+
+            <ImageButton
+                android:id="@+id/boton2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/boton3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="3" />
+
+            <ImageButton
+                android:id="@+id/boton4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="4" />
+
+            <ImageButton
+                android:id="@+id/boton5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="5" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/boton6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="6" />
+
+            <ImageButton
+                android:id="@+id/boton7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="7" />
+
+            <ImageButton
+                android:id="@+id/boton8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:onClick="presionBoton"
+                android:tag="8" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad:"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cantidadDeJugadas"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record:"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cantMinima"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>
