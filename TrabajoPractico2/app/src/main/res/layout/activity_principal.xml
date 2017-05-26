@@ -44,4 +44,12 @@
         android:id="@+id/botonIniciarJuego"
         />
 
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Borrar Historial"
+        android:id="@+id/botonBorrar"
+        />
+
+
 </LinearLayout>

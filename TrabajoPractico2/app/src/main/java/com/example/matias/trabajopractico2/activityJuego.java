@@ -166,7 +166,7 @@ public class activityJuego extends AppCompatActivity {
 
             AlertDialog.Builder ganoMensaje = new AlertDialog.Builder(this);
             ganoMensaje.setTitle("Ganaste");
-            ganoMensaje.setMessage("queres reiniciarlo?");
+            ganoMensaje.setMessage("Mejoraste tu Record! Ahora es " + minimaCantidadDeJugadas + ", queres reiniciarlo?");
             ganoMensaje.setPositiveButton("Si", new DialogInterface.OnClickListener() {
                 public void onClick(DialogInterface ganoMensaje, int id) {
                     empezarAJugar();
@@ -204,7 +204,10 @@ public class activityJuego extends AppCompatActivity {
         int cantidadDedoArriba, cantidadDedoAbajo;
         cantidadDeJugadas = 0;
         jugadas.setText("0");
-        record.setText(minimaCantidadDeJugadas + "");
+        if (minimaCantidadDeJugadas != 0) {
+            record.setText("Record: " + minimaCantidadDeJugadas);
+        }
+
         while (generarBotones) {
             cantidadDedoArriba = 0;
             cantidadDedoAbajo = 0;

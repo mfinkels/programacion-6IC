@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class activityPrincipal extends AppCompatActivity {
 
-    Button btnInciar;
+    Button btnInciar, btnBorrar;
     EditText nombreIngresado, resultado;
     TextView cuenta;
     int numero1, numero2;
@@ -30,6 +30,7 @@ public class activityPrincipal extends AppCompatActivity {
         setContentView(R.layout.activity_principal);
 
         btnInciar = (Button) findViewById(R.id.botonIniciarJuego);
+        btnBorrar = (Button) findViewById(R.id.botonBorrar);
         nombreIngresado =  (EditText)findViewById(R.id.nombre);
         resultado =  (EditText)findViewById(R.id.resultado);
         cuenta =  (TextView) findViewById(R.id.cuenta);
@@ -38,6 +39,13 @@ public class activityPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 iniciar();
+            }
+        });
+        btnBorrar.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                borrar();
             }
         });
         numero1 = funciones.numerosAlAzar();
@@ -78,6 +86,24 @@ public class activityPrincipal extends AppCompatActivity {
         }else {
             Toast.makeText(this, "Ingrese Nombre", Toast.LENGTH_SHORT).show();
         }
+    }
+
+    private void borrar() {
+
+        String nombre = nombreIngresado.getText().toString();
+
+        if (nombre != ""){
+            if(abrirBaseDeDatos()){
+                ContentValues valores = new ContentValues();
+                valores.put("jugadas", 0);
+                bd.update("usuarios", valores, "nombre='" + nombre +"'", null);
+                bd.close();
+                Toast.makeText(this, "Se borraron las jugadas", Toast.LENGTH_SHORT).show();
+            }
+        }else {
+            Toast.makeText(this, "Ingrese Nombre", Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     private boolean abrirBaseDeDatos() {
