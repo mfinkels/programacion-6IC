@@ -70,23 +70,21 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void logInPressed(String username, String password) {
-        Fragment listUser;
-        listUser = new listUserFrag();
-        updateFragment(listUser);
-        /*
+
         if (abrirBaseDeDatos()){
             String query = "select * From user Where username='" + username + "' AND password='" + password + "'";
             conjuntoDeRegistros = bd.rawQuery(query, null);
             if (conjuntoDeRegistros.moveToFirst()){
-            //se logeo
-
+                Fragment listUser;
+                listUser = new listUserFrag();
+                updateFragment(listUser);
             } else {
                 Toast logInError;
                 logInError = Toast.makeText(this, "Username or Password incorrect", Toast.LENGTH_LONG);
                 logInError.show();
             }
             bd.close();
-        }*/
+        }
     }
 
     public void createUserPressed(String username, String password, String confirmPassword) {
@@ -94,10 +92,13 @@ public class MainActivity extends AppCompatActivity {
         if(password.compareTo(confirmPassword) != 0){
             error += "password are diferences.";
         }
-        String query = "select * From user Where username='" + username + "'";
-        conjuntoDeRegistros = bd.rawQuery(query, null);
-        if (conjuntoDeRegistros.moveToFirst()){
-            error += " username exist";
+
+        if (abrirBaseDeDatos()) {
+            String query = "select username from user where username='" + username + "'";
+            conjuntoDeRegistros = bd.rawQuery(query, null);
+            if (conjuntoDeRegistros.moveToFirst()) {
+                error += " username exist";
+            }
         }
 
 

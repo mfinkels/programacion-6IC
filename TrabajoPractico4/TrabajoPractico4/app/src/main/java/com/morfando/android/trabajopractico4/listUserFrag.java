@@ -1,5 +1,7 @@
 package com.morfando.android.trabajopractico4;
 
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
@@ -10,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -19,10 +22,15 @@ import java.util.ArrayList;
 
 public class listUserFrag extends Fragment implements View.OnClickListener{
     MainActivity main;
-    ArrayList<User> myUser;
+    ArrayList<String> myUser;
 
     TextView signOut;
     ListView lv;
+
+    database accesoBD;
+    SQLiteDatabase bd;
+    Cursor conjuntoDeRegistros;
+
 
     public View onCreateView (LayoutInflater inflater, ViewGroup group, Bundle data) {
         View toReturn;
@@ -32,17 +40,42 @@ public class listUserFrag extends Fragment implements View.OnClickListener{
         signOut = (TextView) toReturn.findViewById(R.id.signOut);
         signOut.setOnClickListener(this);
 
+        myUser = listUser();
         lv = (ListView) toReturn.findViewById(R.id.listUser);
         AdapterUser adapter = new AdapterUser(myUser, main);
-
         lv.setAdapter(adapter);
-
-
-
         return toReturn;
     }
 
     public void onClick(View v) {
         main.buttonPressed(v);
     }
+
+    public ArrayList<String> listUser(){
+
+        ArrayList<String> listUser = new ArrayList<>();
+        if (abrirBaseDeDatos()) {
+            Cursor conjuntoDeRegistros = bd.rawQuery("select username from user", null);
+            if (conjuntoDeRegistros.moveToFirst()) {
+
+                do {
+                    listUser.add(conjuntoDeRegistros.getString(0));
+                }
+                while (conjuntoDeRegistros.moveToNext());
+            }
+        }
+        return listUser;
+    }
+
+    private boolean abrirBaseDeDatos() {
+        accesoBD = new database(getActivity(), "baseDeDatos", null, 1);
+        bd=accesoBD.getWritableDatabase();
+        if (bd != null){
+            return true;
+        }else {
+            return false;
+        }
+    }
 }
+
+

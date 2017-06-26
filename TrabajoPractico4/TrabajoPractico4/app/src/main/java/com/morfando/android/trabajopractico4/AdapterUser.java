@@ -14,10 +14,10 @@ import java.util.ArrayList;
  */
 
 public class AdapterUser extends BaseAdapter {
-    private ArrayList<User> users;
+    private ArrayList<String> users;
     private Context myContext;
 
-    public AdapterUser (ArrayList<User> listUser, Context usedContext) {
+    public AdapterUser (ArrayList<String> listUser, Context usedContext) {
         users = listUser;
         myContext = usedContext;
     }
@@ -26,9 +26,8 @@ public class AdapterUser extends BaseAdapter {
         return users.size();
     }
 
-    public User getItem(int position) {
-        User myUser = new User();
-        myUser = users.get(position);
+    public String getItem(int position) {
+        String myUser = users.get(position);
         return myUser;
     }
 
@@ -51,16 +50,8 @@ public class AdapterUser extends BaseAdapter {
         username = (TextView)returnView.findViewById(R.id.username);
 
         String userFromActualPosition;
-        userFromActualPosition = getItem(positionActual).username;
+        userFromActualPosition = getItem(positionActual);
         username.setText(userFromActualPosition);
-
-
-        TextView date;
-        date = (TextView)returnView.findViewById(R.id.lastDate);
-
-        String dateFromActualPosition;
-        dateFromActualPosition = getItem(positionActual).date;
-        date.setText(dateFromActualPosition);
 
         return returnView;
     }
