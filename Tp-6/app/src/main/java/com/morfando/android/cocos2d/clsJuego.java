@@ -62,7 +62,6 @@ public class clsJuego {
         int x, y;
 
         public CapaDeFrente() {
-            ponerImagen();
             super.schedule("ponerImagen", 3.0f);
         }
 
@@ -83,7 +82,7 @@ public class clsJuego {
             imagenVertice.runAction(MoveTo.action(3,xF,yF));
         }
 
-        private void ponerImagen() {
+        public void ponerImagen(float tiempo) {
 
             imagenVertice = Sprite.sprite("logo.png");
 
