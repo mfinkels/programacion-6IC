@@ -47,6 +47,14 @@ public class Game {
     Sprite spikesUp, spikesDown;
     ArrayList<Sprite> spikesLeft, spikesRight;
 
+    EaseIn MoveRight;
+    EaseIn MoveLeft;
+
+    EaseIn gravityRight;
+    EaseIn gravityLeft;
+
+    Boolean typeLastMovement;
+
 
     public Game( CCGLSurfaceView vistadelJuego){
         this.viewGame=vistadelJuego;
@@ -58,6 +66,11 @@ public class Game {
         Log.d("Tamano pantalla", screen.width + " " + screen.height);
         Director.sharedDirector().runWithScene(MainScene());
         isPlaying = false;
+        MoveRight = EaseIn.action(MoveBy.action(0.5f,100,100),15);
+        MoveLeft = EaseIn.action(MoveBy.action(0.5f,-100,100),15);
+
+        gravityRight = (EaseIn) gravityPlayer(true);
+        gravityLeft = (EaseIn) gravityPlayer(false);
     }
 
     private Scene MainScene(){
@@ -197,13 +210,15 @@ public class Game {
 
         @Override
         public boolean ccTouchesBegan(MotionEvent event) {
+            Log.d("began", "ccTouchesBegan");
             if(startToPlay.isVisible()){
                 Log.d("began", "start playing");
                 startPlaying();
             } else {
+                Log.d("isPlaying", (isPlaying?"true" : "false"));
                 if(isPlaying){
-                    Log.d("began", "is Playing Move Up");
-                    moveUpPlayer();
+                    Log.d("began", "Move Player");
+                    movePlayer(typeLastMovement);
                 }
 
             }
@@ -212,16 +227,41 @@ public class Game {
 
     }
 
-    private void moveUpPlayer() {
-        int finalPosition = (int) (player.getPositionX()+100-player.getWidth()/2);
-        EaseIn MoveUp = EaseIn.action(MoveBy.action(0.5f,100,100),15);
-        EaseIn gravity = (EaseIn) gravityPlayer(true);
+    private void movePlayer(Boolean m) {
+        Log.d("move player", "entro a movePlayer");
+
+        int finalPosition=0;
+
+        if (m == null || m == true){
+            m = true;
+            finalPosition = (int) (player.getPositionX()+100-player.getWidth()/2);
+        } else {
+            finalPosition = (int) (player.getPositionX()-100-player.getWidth()/2);
+        }
+
         IntervalAction secuence;
         if (finalPosition >= (int)(screen.getWidth()-player.getWidth()/2)){
-           secuence = Sequence.actions(MoveUp, RotateTo.action(0.1f,-180), gravity);
-
+            // Llego a la derecha, entonces se mueve rota y la gravedad es hacia la izquierda
+            EaseIn gravity = (EaseIn) gravityPlayer(false);
+            secuence = Sequence.actions(MoveRight, RotateTo.action(0,-180), gravityLeft);
+            m = false;
+            Log.d("move player", "Llego a la derecha, entonces se mueve rota y la gravedad es hacia la izquierda");
+        } else if(finalPosition >= (int)(player.getWidth()/2)) {
+            // Llego a la izquierda, entonces se mueve rota y la gravedad es hacia la derecha
+            EaseIn gravity = (EaseIn) gravityPlayer(true);
+            secuence = Sequence.actions(MoveLeft, RotateTo.action(0,-180), gravityRight);
+            m = true;
+            Log.d("move player", "Llego a la izquierda, entonces se mueve rota y la gravedad es hacia la derecha");
         } else {
-            secuence = Sequence.actions(MoveUp, gravity);
+            if (m == true){
+                //derecha
+                secuence = Sequence.actions(MoveRight, RotateTo.action(0,-180), gravityRight);
+                Log.d("move player", "se mueve a la derecha");
+            }else {
+                //izquierda
+                secuence = Sequence.actions(MoveLeft, gravityLeft);
+                Log.d("move player", "se mueve a la izquierda");
+            }
         }
         player.runAction(secuence);
     }
@@ -243,6 +283,7 @@ public class Game {
         points = 0;
         numberPoints.setString(points +"");
         isPlaying = true;
+        typeLastMovement = null;
         player.runAction(gravityPlayer(true));
     }
 
