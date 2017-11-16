@@ -55,6 +55,8 @@ public class Game {
 
     Boolean typeLastMovement;
 
+    int spikesCount;
+
 
     public Game( CCGLSurfaceView vistadelJuego){
         this.viewGame=vistadelJuego;
@@ -234,9 +236,9 @@ public class Game {
 
         if (m == null || m == true){
             m = true;
-            finalPosition = (int) (player.getPositionX()+100-player.getWidth()/2);
+            finalPosition = (int) (player.getPositionX()+100);
         } else {
-            finalPosition = (int) (player.getPositionX()-100-player.getWidth()/2);
+            finalPosition = (int) (player.getPositionX()-100);
         }
 
         IntervalAction secuence;
@@ -246,7 +248,7 @@ public class Game {
             secuence = Sequence.actions(MoveRight, RotateTo.action(0,-180), gravityLeft);
             m = false;
             Log.d("move player", "Llego a la derecha, entonces se mueve rota y la gravedad es hacia la izquierda");
-        } else if(finalPosition >= (int)(player.getWidth()/2)) {
+        } else if(finalPosition <= (int)(player.getWidth()/2)) {
             // Llego a la izquierda, entonces se mueve rota y la gravedad es hacia la derecha
             EaseIn gravity = (EaseIn) gravityPlayer(true);
             secuence = Sequence.actions(MoveLeft, RotateTo.action(0,-180), gravityRight);
@@ -255,7 +257,7 @@ public class Game {
         } else {
             if (m == true){
                 //derecha
-                secuence = Sequence.actions(MoveRight, RotateTo.action(0,-180), gravityRight);
+                secuence = Sequence.actions(MoveRight, gravityRight);
                 Log.d("move player", "se mueve a la derecha");
             }else {
                 //izquierda
@@ -281,10 +283,19 @@ public class Game {
         //Iniciar juego
         startToPlay.setVisible(false);
         points = 0;
+        spikesCount = 2;
         numberPoints.setString(points +"");
         isPlaying = true;
         typeLastMovement = null;
         player.runAction(gravityPlayer(true));
+    }
+
+    private void generatorSpikes(int difficulty, boolean right){
+        spikesCount = ((difficulty/5 > 0) ? difficulty/5+2 : 2);
+
+        for (int i = 1; i <= spikesCount; i++){
+
+        }
     }
 
 
