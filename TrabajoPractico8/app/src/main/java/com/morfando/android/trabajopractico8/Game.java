@@ -7,6 +7,8 @@ import android.view.MotionEvent;
 import org.cocos2d.actions.base.Action;
 import org.cocos2d.actions.ease.EaseIn;
 import org.cocos2d.actions.interval.IntervalAction;
+import org.cocos2d.actions.interval.JumpBy;
+import org.cocos2d.actions.interval.JumpTo;
 import org.cocos2d.actions.interval.MoveBy;
 import org.cocos2d.actions.interval.MoveTo;
 import org.cocos2d.actions.interval.RotateTo;
@@ -25,6 +27,7 @@ import org.cocos2d.types.CCSize;
 
 import java.security.KeyStore;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -45,17 +48,23 @@ public class Game {
 
 
     Sprite spikesUp, spikesDown;
-    ArrayList<Sprite> spikesLeft, spikesRight;
+    ArrayList<Sprite> spikesArr;
 
-    EaseIn MoveRight;
-    EaseIn MoveLeft;
-
-    EaseIn gravityRight;
-    EaseIn gravityLeft;
+    JumpBy right;
+    JumpBy left;
 
     Boolean typeLastMovement;
 
     int spikesCount;
+
+
+    float gravity, jump;
+
+    //Layers
+    Player Player;
+    Spikes spikes;
+
+
 
 
     public Game( CCGLSurfaceView vistadelJuego){
@@ -68,11 +77,12 @@ public class Game {
         Log.d("Tamano pantalla", screen.width + " " + screen.height);
         Director.sharedDirector().runWithScene(MainScene());
         isPlaying = false;
-        MoveRight = EaseIn.action(MoveBy.action(0.5f,100,100),15);
-        MoveLeft = EaseIn.action(MoveBy.action(0.5f,-100,100),15);
-
-        gravityRight = (EaseIn) gravityPlayer(true);
-        gravityLeft = (EaseIn) gravityPlayer(false);
+        jump = screen.getWidth()*(float) 0.1;
+        Log.d("jump", jump +"");
+        gravity = -(screen.getWidth()*(float) 0.12);
+        Log.d("gravity", gravity +"");
+        right = JumpBy.action(1f, jump, gravity, 300, 1);
+        left = JumpBy.action(1f, -jump, gravity, 300, 1);
     }
 
     private Scene MainScene(){
@@ -85,11 +95,10 @@ public class Game {
         Points points;
         points= new Points();
 
-        Spikes spikes;
+
         spikes = new Spikes();
 
-        Player player;
-        player= new Player();
+        Player= new Player();
 
         MainMenu menu;
         menu = new MainMenu();
@@ -141,21 +150,47 @@ public class Game {
                 x += 650;
             }while(screen.getWidth() > x);
 
-            spikesLeft = new ArrayList<Sprite>();
-            spikesRight = new ArrayList<Sprite>();
-            int y = 110;
-            do {
-                Sprite spikes = Sprite.sprite("spike.png");
-                spikes.setPosition((-spikes.getWidth()), y);
-                spikesLeft.add(spikes);
-
-                spikes.setPosition((screen.getWidth() + spikes.getWidth()), y);
-                spikesRight.add(spikes);
-
-                y += 10;
-            }while ((screen.getHeight()-100) > y);
+            spikesArr = new ArrayList<Sprite>();
 
         }
+
+        public void generatorSpikes(int difficulty, boolean right){
+
+            if (spikesArr.size() > 0){
+                removeSpikes();
+                spikesArr.clear();
+            }
+
+            spikesCount = ((difficulty/5 > 0) ? difficulty/5+2 : 2);
+            int x;
+
+            for (int i = 1; i <= spikesCount; i++){
+                Sprite s = Sprite.sprite("spike.png");
+                if (right){
+                    x = (int)screen.getWidth() - (int)s.getWidth()/2;
+                } else {
+                    x = 0+(int)s.getWidth()/2;
+                }
+                Random random = new Random();
+                int y = random.nextInt((int)screen.getHeight()-300);
+                s.setPosition(x, y);
+                spikesArr.add(s);
+            }
+            addSpikes();
+        }
+
+        public void addSpikes(){
+            for (Sprite s: spikesArr) {
+                super.addChild(s);
+            }
+        }
+
+        public void removeSpikes(){
+            for (Sprite s: spikesArr) {
+                super.removeChild(s, true);
+            }
+        }
+
     }
 
 
@@ -170,7 +205,7 @@ public class Game {
 
             bgPoints.setPosition(screen.width/2, screen.height/2);
 
-            numberPoints = Label.label("0","Vedana",60f);
+            numberPoints = Label.label("0","Vedana",600f);
             numberPoints.setColor(new CCColor3B(0,0,0));
             numberPoints.setPosition(screen.getWidth()/2, screen.getHeight()/2);
 
@@ -192,6 +227,21 @@ public class Game {
 
             super.addChild(player,2);
         }
+
+        public void flipPlayer(boolean right , float x, float y){
+
+            super.removeChild(player, true);
+
+            if(right){
+                player = Sprite.sprite("player_01.png");
+            } else {
+                player = Sprite.sprite("player_01_v.png");
+            }
+            player.setPosition(x,y);
+
+            super.addChild(player, 2);
+        }
+
     }
 
 
@@ -203,7 +253,7 @@ public class Game {
 
         public void setMainMenu() {
             this.setIsTouchEnabled(true);
-            startToPlay = Label.label("Touch to start playing", "Vedana", 60f);
+            startToPlay = Label.label("Touch to start playing", "Vedana", 100f);
 
             startToPlay.setPosition(screen.width/2, screen.height/2 + 30);
 
@@ -220,7 +270,7 @@ public class Game {
                 Log.d("isPlaying", (isPlaying?"true" : "false"));
                 if(isPlaying){
                     Log.d("began", "Move Player");
-                    movePlayer(typeLastMovement);
+                    movePlayer();
                 }
 
             }
@@ -229,74 +279,101 @@ public class Game {
 
     }
 
-    private void movePlayer(Boolean m) {
+    private void movePlayer() {
         Log.d("move player", "entro a movePlayer");
 
-        int finalPosition=0;
+        float finalPosition=0;
 
-        if (m == null || m == true){
-            m = true;
-            finalPosition = (int) (player.getPositionX()+100);
+        Log.d("movement in", ((typeLastMovement == null || typeLastMovement == true) ? "true" : "false"));
+
+        if (typeLastMovement == null || typeLastMovement == true){
+            typeLastMovement = true;
+            finalPosition = player.getPositionX()+jump;
         } else {
-            finalPosition = (int) (player.getPositionX()-100);
+            finalPosition = player.getPositionX()-jump;
         }
 
-        IntervalAction secuence;
-        if (finalPosition >= (int)(screen.getWidth()-player.getWidth()/2)){
+        if (finalPosition >= (screen.getWidth()-player.getWidth()/2)){
             // Llego a la derecha, entonces se mueve rota y la gravedad es hacia la izquierda
-            EaseIn gravity = (EaseIn) gravityPlayer(false);
-            secuence = Sequence.actions(MoveRight, RotateTo.action(0,-180), gravityLeft);
-            m = false;
-            Log.d("move player", "Llego a la derecha, entonces se mueve rota y la gravedad es hacia la izquierda");
-        } else if(finalPosition <= (int)(player.getWidth()/2)) {
+            //Player.flipPlayer(false, player.getPositionX(), player.getPositionY());
+            player.runAction(left);
+            finalPosition = (int) player.getPositionX();
+            typeLastMovement = false;
+            points++;
+            numberPoints.setString(points +"");
+            spikes.generatorSpikes(points, typeLastMovement);
+            boolean colliding = collidingSpikesPlayer();
+            if(colliding){
+                gameOver();
+            }
+
+
+            Log.d("movement llego der", ((typeLastMovement == null || typeLastMovement == true) ? "true" : "false"));
+            Log.d("move player", "fin deracha");
+
+        } else if(finalPosition <= (player.getWidth()/2)) {
             // Llego a la izquierda, entonces se mueve rota y la gravedad es hacia la derecha
-            EaseIn gravity = (EaseIn) gravityPlayer(true);
-            secuence = Sequence.actions(MoveLeft, RotateTo.action(0,-180), gravityRight);
-            m = true;
-            Log.d("move player", "Llego a la izquierda, entonces se mueve rota y la gravedad es hacia la derecha");
+            //Player.flipPlayer(true, player.getPositionX(), player.getPositionY());
+            player.runAction(right);
+            finalPosition = (int) player.getPositionX();
+            typeLastMovement = true;
+            points++;
+            numberPoints.setString(points +"");
+            spikes.generatorSpikes(points, typeLastMovement);
+            boolean colliding = collidingSpikesPlayer();
+            if(colliding){
+                gameOver();
+            }
+
+            Log.d("move player", "fin izquierda");
+
         } else {
-            if (m == true){
+            if (typeLastMovement == true){
                 //derecha
-                secuence = Sequence.actions(MoveRight, gravityRight);
-                Log.d("move player", "se mueve a la derecha");
+                player.runAction(right);
+                Log.d("move player", "sigue derecha");
+
             }else {
                 //izquierda
-                secuence = Sequence.actions(MoveLeft, gravityLeft);
-                Log.d("move player", "se mueve a la izquierda");
+                player.runAction(left);
+                Log.d("move player", "sigue izquierda");
             }
         }
-        player.runAction(secuence);
+
+        Log.d("posicion", "player " + finalPosition);
+        Log.d("movement fin", ((typeLastMovement == null || typeLastMovement == true) ? "true" : "false"));
     }
 
-    public Action gravityPlayer(boolean right){
-        float x, y;
-        if(right){
-            x = screen.getWidth() - (player.getWidth()/2) - 20;
-        } else {
-            x = (player.getWidth()/2) + 20;
-        }
-        y = (player.getHeight()/2);
-        return EaseIn.action(MoveTo.action(2f,x,y),15);
+    private void gameOver() {
+        startToPlay.setVisible(true);
+        startToPlay.setString("Game Over!! Toque para volver a jugar");
+        player.setPosition(screen.getWidth()/2, screen.getHeight()/2);
+    }
+
+
+    private boolean collidingSpikesPlayer(){
+        boolean result = false;
+        int i = 0;
+        do {
+            Sprite s = spikesArr.get(0);
+            result = isColliding(s, player);
+            i++;
+        }while(result == false && spikesArr.size() > i);
+
+        return result;
     }
 
     private void startPlaying() {
         //Iniciar juego
         startToPlay.setVisible(false);
         points = 0;
-        spikesCount = 2;
         numberPoints.setString(points +"");
         isPlaying = true;
         typeLastMovement = null;
-        player.runAction(gravityPlayer(true));
+        spikes.generatorSpikes(points, true);
     }
 
-    private void generatorSpikes(int difficulty, boolean right){
-        spikesCount = ((difficulty/5 > 0) ? difficulty/5+2 : 2);
 
-        for (int i = 1; i <= spikesCount; i++){
-
-        }
-    }
 
 
     private boolean isColliding(Sprite sprt1, Sprite sprt2){
